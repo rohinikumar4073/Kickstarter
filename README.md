@@ -4,6 +4,6 @@ This project is created using MVC architecutre in vanilla javascript in ES6.
 
 We can browse all Kick starter project and open the project
 
-`Installation steps`
+### WTF is ES6?
 npm install
 gulp serve
