@@ -25,6 +25,6 @@
   "license": "MIT",
   "scripts": {
     "start": "npm install",
-    "postinstall": "gulp serve"  
+    "postinstall": "./node_modules/.bin/gulp serve"  
 }
 }
