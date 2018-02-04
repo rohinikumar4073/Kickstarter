@@ -1,14 +1,8 @@
-## ES6 Babel Browserify Boilerplate
+## Kickstarter template
 
-This is an boilerplate repo to make it easy to experiment with [ES6]. It's inspired by [es6-browserify-boilerplate](https://github.com/thoughtram/es6-browserify-boilerplate) but uses babel (formerly 6to5) for transpilation which does not depend on any runtime.
+This project is created using MVC architecutre in vanilla javascript.
 
 
-### Initial setup
-
-```bash
-# Clone the repo...
-git clone https://github.com/thoughtram/es6-6to5-browserify-boilerplate.git
-cd es6-6to5-browserify-boilerplate
 
 # Then, you need to install all the dependencies...
 npm install
