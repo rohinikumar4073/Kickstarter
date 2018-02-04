@@ -24,7 +24,7 @@
   "author": "Christoph Burgdorf <christoph@thoughtram.io>",
   "license": "MIT",
   "scripts": {
-    "build:prod": "npm install",
+    "start": "npm install",
     "postinstall": "gulp serve"  
 }
 }
