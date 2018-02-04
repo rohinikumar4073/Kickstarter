@@ -25,6 +25,6 @@
   "license": "MIT",
   "scripts": {
     "start": "node app", 
-  "postinstall": "gulp default" 
+  "postinstall": "gulp serve" 
 }
 }
