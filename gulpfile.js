@@ -8,6 +8,8 @@ var source = require('vinyl-source-stream');
 var _ = require('lodash');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
+var connect = require('gulp-connect');
+
 
 var config = {
   entryFile: './src/app.js',
@@ -56,6 +58,13 @@ gulp.task('watch', ['build-persistent'], function() {
 
   getBundler().on('update', function() {
     gulp.start('build-persistent')
+  });
+});
+gulp.task('serveprod', function() {
+  connect.server({
+    root: config.outputDir,
+    port: process.env.PORT || 5000, // localhost:5000
+    livereload: false
   });
 });
 

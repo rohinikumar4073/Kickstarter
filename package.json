@@ -15,16 +15,17 @@
     "browser-sync": "^1.7.1",
     "browserify": "^6.3.3",
     "gulp": "~3.8.10",
+    "gulp-connect": "^5.2.0",
     "gulp-rename": "^1.2.0",
     "lodash": "^2.4.1",
     "rimraf": "~2.2.8",
-    "watchify": "^2.1.1",
-    "vinyl-source-stream": "^1.0.0"
+    "vinyl-source-stream": "^1.0.0",
+    "watchify": "^2.1.1"
   },
   "author": "Christoph Burgdorf <christoph@thoughtram.io>",
   "license": "MIT",
   "scripts": {
-    "start": "node app", 
-  "postinstall": "gulp serve" 
-}
+    "start": "node app",
+    "postinstall": "gulp serveprod"
+  }
 }
