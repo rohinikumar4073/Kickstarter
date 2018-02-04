@@ -1,0 +1,75 @@
+
+  .demo-card-wide.mdl-card {
+    width: auto;
+  }
+.demo-card-wide{
+  cursor: pointer;
+}
+  .demo-card-wide > .mdl-card__menu {
+    color: #fff;
+  }
+  
+  heading{
+  text-align: center;
+  display: block;
+  padding-top:15px;
+  }
+  heading .heading__title{
+    margin:5px;
+  }
+  
+  .mdl-card__title-h5{
+   
+  }
+  .mdl-card__title{
+    background-color:rgb(103,58,183); 
+    color: #fff;
+    height: 100px;
+  }
+  .kickstarter__card--launch{
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+  display: none;  }
+  .kickstartercard__body {
+    padding: 8px 16px 0px;
+    display: flex;
+}
+.kickstartercard__body-label{
+  display: block;
+    font-size: 14px;
+    color: #555;
+}
+
+.kickstartercard__body-item{
+padding-right: 10px;
+font-size: 18px;
+width: 125px;
+overflow: hidden;
+min-height: 80px;
+}
+.kickstartercard__currency-type{
+  text-transform: uppercase;
+padding: 5px;
+font-size: 16px;
+font-weight: bold;
+
+}
+.kickstarter__card--by,.kickstarter__card--date{
+  font-size: 18px;
+}
+.kickstarter__filters{
+  position: absolute;
+  right: 25px;
+  top:0px;
+  display: flex;
+  align-items: center;
+}
+.kickstarter__sorting-by{
+  padding-left:5px; 
+}.sortselected{
+  background-color: rgb(224,64,251); 
+  color: #fff;
+}#kickstarterfilter_location-active,#kickstarterfilter_sort-active{
+  display: none;
+}

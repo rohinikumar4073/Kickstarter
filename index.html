@@ -1,0 +1,90 @@
+<!doctype html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Kick Starter Projects</title>
+
+  <meta name="mobile-web-app-capable" content="yes">
+</head>
+
+<body>
+  <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-purple.min.css">
+  <!-- Material Design icon font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="./dist/app.js"> </script>
+  <script>
+    app();
+  </script>
+  <heading>
+    <h4 class="heading__title">Kickstarter Projects</h4>
+    <div class="kickstarter__filters">
+      Filter By
+      <span class="mdl-chip mdl-chip--deletable " id="kickstarterfilter_location-active">
+        <span class="mdl-chip__text" id="kickstarterfilter_location-active-text"></span>
+        <button type="button" class="mdl-chip__action" id="kickstarterfilter_location-active-button">
+            <i class="material-icons">cancel</i>
+        </button>
+      </span>
+      <div class="kickstarter__filter-by">
+        <button id="demo-menu-lower-filter" class="mdl-button mdl-js-button mdl-button--icon">
+          <i class="material-icons">filter_list</i>
+        </button>
+        <div> </div>
+        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-filter" id="filterList">
+        </ul>
+      </div>
+      Sort By
+      <span class="mdl-chip mdl-chip--deletable " id="kickstarterfilter_sort-active">
+        <span class="mdl-chip__text" id="kickstarterfilter_sort-active-text"></span>
+        <button type="button" class="mdl-chip__action" id="kickstarterfilter_sort-active-button">
+            <i class="material-icons">cancel</i>
+        </button>
+      </span>
+      <div class="kickstarter__sorting-by">
+        <button id="demo-menu-lower-left" class="mdl-button mdl-js-button mdl-button--icon">
+          <i class="material-icons">sort</i>
+        </button>
+        <div> </div>
+        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-left" id="sortList">
+          <li class="mdl-menu__item" id="ascPercFund">
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+            Percentage Funded</li>
+          <li class="mdl-menu__item" id="descPercFund">
+            <i class="fa fa-arrow-down" aria-hidden="true"></i> Percentage Funded</li>
+          <li class="mdl-menu__item" id="ascByEndingDate">
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+            End Date</li>
+          <li class="mdl-menu__item" id="descByEndingDate">
+            <i class="fa fa-arrow-down" aria-hidden="true"></i>
+            End Date</li>
+         
+        </ul>
+      </div>
+
+      <form id="searchForm">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+          <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
+            <i class="material-icons">search</i>
+          </label>
+          <div class="mdl-textfield__expandable-holder">
+            <input class="mdl-textfield__input" type="text" id="sample6">
+            <label class="mdl-textfield__label" for="sample-expandable">Search </label>
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </heading>
+
+  <div id="kickstarter-data">
+  </div>
+</body>
+
+</html>
