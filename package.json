@@ -25,7 +25,7 @@
   "author": "Christoph Burgdorf <christoph@thoughtram.io>",
   "license": "MIT",
   "scripts": {
-    "start": "node app",
-    "postinstall": "gulp serveprod"
+    "start": "gulp build",
+    "postinstall": "node index.js"
   }
 }
