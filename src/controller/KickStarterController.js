@@ -5,7 +5,7 @@ export default class KickStarterController {
         this.view = view;
     }
     initalise() {
-        const kickStarterGetApi = "http://starlord.hackerearth.com/kickstarter"
+        const kickStarterGetApi = "data/kickstarter.json"
         ApiService.getData(kickStarterGetApi).then(response => {
             this.model.loadData(JSON.parse(response));
             this.view.loadLocations(this.model.getLocations(),
