@@ -1,15 +1,15 @@
+
 {
-  "name": "es6-6to5-browserify-boilerplate",
-  "version": "0.0.0",
-  "description": "A repo to play with ES6++",
-  "homepage": "https://github.com/thoughtram/es6-6to5-browserify-boilerplate",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/thoughtram/es6-6to5-browserify-boilerplate.git"
+  "name": "kickstarter",
+  "version": "0.3.0",
+  "description": "A sample Node.js app using Express 4",
+  "engines": {
+    "node": "8.9.1"
   },
-  "bugs": {
-    "url": "https://github.com/thoughtram/es6-6to5-browserify-boilerplate/issues"
-  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+    },
   "dependencies": {
     "babelify": "~5.0.3",
     "browser-sync": "^1.7.1",
@@ -23,10 +23,18 @@
     "vinyl-source-stream": "^1.0.0",
     "watchify": "^2.1.1"
   },
-  "author": "Christoph Burgdorf <christoph@thoughtram.io>",
-  "license": "MIT",
-  "scripts": {
-    "start": "gulp build",
-    "postinstall": "node index.js"
-  }
+  "devDependencies": {
+    "request": "^2.81.0",
+    "tape": "^4.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heroku/node-js-getting-started"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
 }

@@ -1,28 +1,9 @@
-var express = require('express');
-var http    = require('http');
-var server = express();
+const express = require('express')
+const path = require('path')
+const PORT = process.env.PORT || 5000
 
-server.set('port', (process.env.PORT || 5000));
-
-// log all requests to the console
-server.use(express.static('./'));
-
-// Serve index.html for all routes to leave routing up to Angular
-server.all('/*', function(req, res) {
-  res.sendFile('index.html', { root: './' });
-});
-
-// Start webserver if not already running
-var s = http.createServer(server);
-s.on('error', function(err){
-if(err.code === 'EADDRINUSE'){
-  gutil.log('Development server is already started at port ' + server.get('port'));
-}
-else {
-  throw err;
-}
-});
-
-s.listen(server.get('port'), function() {
-console.log('Node app is running on port', process.env.PORT);
-});
+express()
+  .use(express.static(path.join(__dirname)))
+  
+  .get('/', (req, res) => res.render('index.html'))
+  .listen(PORT, () => console.log(`Listening on ${ PORT }`))
